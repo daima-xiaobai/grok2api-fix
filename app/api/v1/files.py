@@ -13,7 +13,7 @@ from app.core.storage import DATA_DIR
 router = APIRouter(tags=["Files"])
 
 # 缓存根目录
-BASE_DIR = DATA_DIR / "tmp"
+BASE_DIR = Path("/app/storage")
 IMAGE_DIR = BASE_DIR / "image"
 VIDEO_DIR = BASE_DIR / "video"
 
